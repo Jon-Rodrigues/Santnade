@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vierwport" content="width=device-width, initial-scale=1.0">
+    <title>Santnader</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Formulario">
+            <h1>Banco Santoandré</h1>
+            <h3>Haha otario!<br><br>Clonei o seu cartão</h3>
+
+
+        </div>
+        <div class="Quad">
+             <div class="quadrado">
+                <img id="logo" src="Source/Santander_Logo_0.svg" alt="Icone"/>
+                <img id="logo2" src="Source/Santander_Logo_0 copy.svg" alt="Icone"/>
+                <img id="gifAleatorio" alt="gif">
+             </div>
+        </div>
+    </div>
+    <div id="resultado"></div>
+    <script>
+    const gifs = [
+      "Source/corolla-preto.gif",
+      "Source/korea-south-korea.gif",
+      "Source/white-toothless-dancing-meme-white-toothless.gif",
+      "Source/spongebob-dance-spongebob-joget.gif",
+      "Source/dance-excited.gif"
+    ];
+ 
+    function sortearGif() {
+      const aleatorio = Math.floor(Math.random() * gifs.length);
+      document.getElementById("gifAleatorio").src = gifs[aleatorio];
+    }
+ 
+    sortearGif();
+  </script>
+</body>
+</html>

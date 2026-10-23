@@ -1,0 +1,512 @@
+
+body{
+    background-color: rgb(20, 20, 20);
+
+}
+
+
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 100px;
+    color: #bd3737;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0px;
+    color: #e5e5e5;
+    text-align: left;
+    font-style: normal;
+    margin-left: 50px;
+    margin-top: 300px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0px;
+    color: #e5e5e5;
+    text-align: center;
+    font-style: normal;
+    margin-left: 50px;
+    margin-top: 100px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0px;
+    color: #e5e5e5;
+    text-align: left;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 50px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.container {
+  display: grid; 
+  grid-template-columns: 1.5fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Quad Formulario"
+    "Quad Formulario"
+    "Quad Formulario"; 
+}
+
+.Formulario { 
+    grid-area: Formulario; 
+}
+
+.Quad { 
+    grid-area: Quad; 
+    width: 900px;
+    height: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#gifAleatorio{
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#logo{
+    width: 200px;
+    opacity: 50%;
+    position: absolute;
+    margin: 50px;
+    z-index: -1;
+}
+
+#logo2{
+    filter: hue-rotate(0deg);
+    width: 3500px;
+    opacity: 40%;
+    position: absolute;
+    left:  400px;
+    margin: 2%;
+    z-index: -1;
+}
+
+.caixas{
+    position: absolute;
+    bottom: 50px; 
+    left: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.box{
+    width: 250px;
+    height: 180px;
+    background: white;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(238, 238, 238, 0.2)
+}
+
+
+
+
+
+.inputbox:not(.inputcurto .inputbox) {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.inputcurto {
+  position: relative;
+  margin-top: 35px;
+}
+
+#cvv{
+  width: 100px;
+}
+
+
+
+.vencimento{
+  display: flex;
+  gap: 20px;
+  width: 175px; 
+}
+
+    
+
+.umalinha {
+  display: flex;
+  gap: 105px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #bcbcbc;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+
+.inputbox input:focus ~span {
+  color: #bd3737;
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0,75em;
+}
+
+.inputbox input:valid ~span {
+  color: #8f8f8f;
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0,75em;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #2e2e2e;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+  height: 44px;
+}
+
+
+
+
+/*
+input{
+color: rgb(60, 60, 60);
+background-color: rgb(60, 60, 60);
+block-size: 40px;
+border-radius: 10px;
+text-align: center;
+font-size: medium;
+margin: 10px;
+border: #ffffff00;
+}
+
+input:hover{
+background-color: rgb(43, 45, 47);
+color: rgb(187, 187, 187);
+}
+*/
+
+
+
+
+.quadrado {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  z-index: -2;
+  margin: 0%;
+}
+
+@keyframes corquadrado {
+    0% {
+        --y-0: 80%;
+        --s-start-0: 9%;
+        --s-end-0: 55%;
+        --c-0: hsla(348, 100%, 23%, 1);
+        --x-0: 85%;
+        --x-1: 60%;
+        --y-1: 24%;
+        --c-1: hsla(352, 98%, 41%, 1);
+        --s-start-1: 5%;
+        --s-end-1: 72%;
+        --y-2: 82%;
+        --c-2: hsla(0, 90%, 16%, 1);
+        --s-start-2: 5%;
+        --s-end-2: 52%;
+        --x-2: 13%;
+        --x-3: 24%;
+        --s-start-3: 13%;
+        --s-end-3: 68%;
+        --c-3: hsla(320, 93%, 23%, 1);
+        --y-3: 7%;
+    }
+
+    100% {
+        --y-0: 94%;
+        --s-start-0: 9%;
+        --s-end-0: 55%;
+        --c-0: hsla(0, 60%, 48%, 1);
+        --x-0: 31%;
+        --x-1: 2%;
+        --y-1: 25%;
+        --c-1: hsla(341, 98%, 41%, 1);
+        --s-start-1: 5%;
+        --s-end-1: 72%;
+        --y-2: 20%;
+        --c-2: hsla(0, 96%, 12%, 1);
+        --s-start-2: 5%;
+        --s-end-2: 52%;
+        --x-2: 98%;
+        --x-3: 95%;
+        --s-start-3: 13%;
+        --s-end-3: 68%;
+        --c-3: hsla(324, 75%, 32%, 1);
+        --y-3: 92%;
+    }
+}
+
+@property --y-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 80%
+}
+
+@property --s-start-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 9%
+}
+
+@property --s-end-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 55%
+}
+
+@property --c-0 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(348, 100%, 23%, 1)
+}
+
+@property --x-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 85%
+}
+
+@property --x-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 60%
+}
+
+@property --y-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 24%
+}
+
+@property --c-1 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(352, 98%, 41%, 1)
+}
+
+@property --s-start-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 5%
+}
+
+@property --s-end-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 72%
+}
+
+@property --y-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 82%
+}
+
+@property --c-2 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(0, 90%, 16%, 1)
+}
+
+@property --s-start-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 5%
+}
+
+@property --s-end-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 52%
+}
+
+@property --x-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 13%
+}
+
+@property --x-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 24%
+}
+
+@property --s-start-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 13%
+}
+
+@property --s-end-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 68%
+}
+
+@property --c-3 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(320, 93%, 23%, 1)
+}
+
+@property --y-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 7%
+}
+
+.quadrado {
+    --y-0: 80%;
+    --c-0: hsla(348, 100%, 23%, 1);
+    --x-0: 85%;
+    --x-1: 60%;
+    --y-1: 24%;
+    --c-1: hsla(352, 98%, 41%, 1);
+    --y-2: 82%;
+    --c-2: hsla(0, 90%, 16%, 1);
+    --x-2: 13%;
+    --x-3: 24%;
+    --c-3: hsla(320, 93%, 23%, 1);
+    --y-3: 7%;
+    background-color: hsla(0, 93%, 14%, 1);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1693 1693' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"), radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3));
+    animation: corquadrado 10s linear infinite alternate;
+    background-blend-mode: overlay, normal, normal, normal, normal;
+    will-change: transform, opacity;
+    contain: paint;
+}
+
+
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 125px;
+  margin-top: 50px;
+}
+
+button {
+  --primary-color: #686868;
+  --hovered-color: #bd3737;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+button p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+button p::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Enviar";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+button:hover::after {
+  width: 100%;
+}
+
+button:hover p::before {
+  width: 100%;
+}
+
+button:hover svg {
+  transform: translateX(4px);
+  color: var(--hovered-color);
+}
+
+button svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
